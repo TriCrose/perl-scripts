@@ -13,7 +13,6 @@ my @numbers = split(",", $nums);
 print "Insertion sort:\t", join(", ", insertion_sort @numbers), "\n";
 print "Quick sort:\t", join(", ", quick_sort @numbers), "\n";
 print "Merge sort:\t", join(", ", merge_sort @numbers), "\n";
-<STDIN>;
 
 sub insertion_sort {
 	my @sorted = @_;
