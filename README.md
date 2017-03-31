@@ -8,3 +8,6 @@ This script simply takes a BMP file and inverts the colour of each pixel. The sc
 
 ## sorting_algorithms.pl
 This is a Perl implementation of the three main sorting algorithms (insertion sort, quicksort and merge sort). The script does not require command-line parameters, and asks for a list of comma-separated numbers upon execution.
+
+## change.pl
+This is an implementation of a dynamic programming algorithm to make the minimum change for a given amount (given a set of coin denominations). The function `change` takes the amount first, and then each subsequent parameter is a coin denomination. The return value is an array of the minimum coins required to make change.
