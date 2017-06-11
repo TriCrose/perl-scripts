@@ -12,7 +12,7 @@ sub change {
             my $prev_index = $_ - $coin;
             next if $prev_index < 0;
             my $prev = $min_coins[$prev_index];
-            next if not defined $prev;
+            next unless defined $prev;
 
             if (not defined $min_coins[$_] or $prev + 1 < $min_coins[$_]) {
                 $min_coins[$_] = $prev + 1;
@@ -21,7 +21,7 @@ sub change {
         }
     }
 
-    return () if not defined $min_coins[$n];
+    return () unless defined $min_coins[$n];
 
     my @solution;
     my $index = $n;
@@ -33,4 +33,4 @@ sub change {
     return @solution;
 }
 
-print join(", ", change(15, 4, 7));
+print join(", ", change(16, 5, 2));
